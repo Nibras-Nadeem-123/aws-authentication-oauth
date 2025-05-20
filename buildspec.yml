@@ -14,7 +14,7 @@ phases:
 
   post_build:
     commands:
-      - echo "Triggering deployment on Windows EC2 via SSM"
+      - echo "Triggering deployment on Windows EC2 via SSM..."
       - |
         aws ssm send-command \
           --document-name "AWS-RunPowerShellScript" \
